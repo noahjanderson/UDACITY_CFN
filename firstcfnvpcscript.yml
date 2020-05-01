@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  Noah Anderson
+  This deploys a VPC
+Resources:
+  VPC:
+    Type: 'AWS::EC2::VPC'
+    Properties:
+      EnableDnsHostnames: 'true'
+      CidrBlock: 10.0.0.0/16
